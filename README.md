@@ -1,43 +1,35 @@
-Employee Tax Calculation System
-Description
-This Java application demonstrates core object-oriented programming (OOP) concepts, specifically abstraction, inheritance, and interfaces. It models a system that calculates tax for both full-time and part-time employees.
+# Employee Tax Calculation System
 
-The system handles:
+## Description
+This Java application models a simple employee tax calculation system using object-oriented programming concepts. It distinguishes between full-time and part-time employees, calculates their salaries, and applies appropriate tax rates through a structured class hierarchy.
 
-Employee data management
+The system includes an interface and an abstract class to define behavior and structure, with concrete subclasses handling the specific logic for each type of employee. It showcases the use of abstraction, inheritance, and interfaces in Java.
 
-Salary calculation
+## Components
 
-Tax calculation based on employee type
+Taxable Interface: Ensures all employee types implement a method to calculate tax.
 
-Components
-1. Taxable Interface
-Defines a common contract for tax calculation, which is implemented by all employee types.
+Employee (Abstract Class): Holds shared attributes like employee name and enforces salary calculation logic in subclasses.
 
-2. Employee (Abstract Class)
-Represents the base class for all employees, storing shared properties such as name. It includes an abstract method for salary calculation, ensuring all subclasses implement their own logic.
+FullTimeEmployee Class: Represents full-time employees with a fixed salary and a specific tax rate.
 
-3. FullTimeEmployee Class
-Represents employees with a fixed salary. Inherits from the Employee class and implements the Taxable interface.
+PartTimeEmployee Class: Represents part-time employees paid based on hourly work and applies a different tax rate.
 
-4. PartTimeEmployee Class
-Represents employees paid based on hours worked and hourly rate. Also inherits from Employee and implements Taxable.
+Main Class: Creates instances of employees, calculates their salaries and taxes, and prints the results.
 
-5. Main Class
-Responsible for creating employee objects, storing them in lists, invoking salary and tax calculations, and displaying the results.
+## Design Highlights
 
-Design Highlights
-Abstraction is used through the Employee abstract class.
+Abstraction: Used via the abstract Employee class.
 
-Polymorphism is achieved via the Taxable interface.
+Polymorphism: Achieved through the Taxable interface.
 
-Encapsulation is used to manage employee data through getters and setters.
+Encapsulation: Maintains data integrity using private fields with getters and setters.
 
-Inheritance allows specific employee types to reuse common functionality while implementing their own logic for salary and tax calculations.
+Inheritance: Allows subclasses to reuse and extend common behavior.
 
-Purpose
-This project is designed to serve as a foundational example of using Java's OOP features to solve real-world modeling problems such as payroll and taxation.
+## Purpose
+This project serves as a foundational example of applying OOP principles in Java for real-world tasks such as payroll and taxation systems. It is intended for learning, academic, or basic software design demonstration purposes.
 
-Author
+## Author
 Name: Lokeshwaran M
 Email: lokeshwaran.m@epssw.com
